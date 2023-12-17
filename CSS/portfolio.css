@@ -1,0 +1,46 @@
+/*Barra de Navegación  */
+.navbar {
+    padding: 2rem;
+    background-color: #333;
+}
+
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Cambio de color  */
+.navbar-nav .nav-link {
+    color: #aaa;
+    transition: color 0.7s, text-shadow 0.7s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: rgba(181, 167, 10, 0.7);
+    text-shadow: 0 0 10px rgb(248, 248, 60);
+    transition: color 0.7s, text-shadow 0.7s;
+}
+
+.navbar-toggler {
+    background-color:rgba(181, 167, 10, 0.7);;
+}
+
+.navbar-toggler:hover {
+    background-color: rgba(181, 167, 10, 0.5); /* Cambia a tu color deseado en hover */
+    border-color: rgba(181, 167, 10, 0.5); /* Cambia a tu color deseado en hover */
+    border:  1px rgba(181, 167, 10, 0.5);;
+}
+
+.navbar-toggler:focus {
+    outline: 2px solid rgba(181, 167, 10, 0.4);;
+    box-shadow: 0 0 10px rgba(181, 167, 10, 0.4);;
+}
+
+
+/* Responsive */
+@media screen and (max-width: 767px) {
+    .navbar-brand{
+        display: none;
+    }   
+}
+
