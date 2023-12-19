@@ -1,19 +1,8 @@
 /*Barra de Navegación  */
 .navbar {
     padding: 1rem;
-    background-color: #333;
+    background-color: #1b1b32;
     animation: fadeIn 1.5s ease;
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-        filter: blur(10px);
-    }
-    0% {
-        opacity: 1;
-        filter: brightness(3) blur(5px);
-    }
 }
 
 .navbar-collapse {
@@ -27,23 +16,127 @@
     margin: 0px;
     padding: 0px;
     border-radius: 50px;
-    background-color: #333;
+    background-color: #1b1b32;
     transition: background-color 0.9s, box-shadow 0.6s, border-radius 0.8s;
 } 
 
 .navbar-collapse .navbar-brand:hover {
-    background-color: #444;
+    background-color: #1b1b32;
     border-radius: 50px;
     box-shadow: 0 0 300px rgba(255, 255, 255, 1);
     transition: background-color 0.7s, box-shadow 0.6s, border-radius 0.8s; 
 } 
+
+/* Estilos generales */
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-family: 'Rubik Moonrocks', sans-serif;
+}
+
+.section-title {
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family: 'Rubik Moonrocks', sans-serif;
+}
+
+.section-text {
+    font-size: 1.2rem;
+}
+
+.section-dark {
+    background-color: #1b1b32;
+    color: white;
+}
+
+.section-clear {
+    color: black;
+    background-color: #f5f6f7;
+}
+
+/*  seccion Hero */
+.hero {
+    background-color: #f5f6f7;
+    min-height: 450px;
+    text-align: center;
+}
+
+.hero-principal {
+    padding: 3rem;
+}
+
+.hero-image-profile {
+    width: 200px;
+    height: 200px;
+    border-radius: 30%;
+    margin: 20px;
+}
+
+.hero-principal  h2 {
+    font-size: 1.5rem;
+    color: #615151;
+}
+
+/*  Section About Me */
+.about-me {
+    height: 500px;
+    padding: 10px;
+}
+
+.about-me .contenedor {
+    max-width: 600px;
+    text-align: center;
+}
+
+/* Experiencia */
+.experiencia {
+    padding: 40px 40px 60px 40px;
+}
+
+.columna {
+    margin: 10px 0;
+}
+
+.experiencia i {
+    font-size: 2.5rem;
+    color: #7ade30;
+    background-color: #0a0a23;
+    padding: 8px 19px;
+    border-radius: 50%;
+}
+
+.experiencia-titulo {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.badges-contenedo {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.badges {
+    margin: 15px;
+}
+
+
+
 
 
 /* Cambio de color  */
 .navbar-nav .nav-link {
     color: #ccc;
     transition: color 0.7s, text-shadow 0.7s;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .navbar-nav .nav-link:hover {
@@ -72,6 +165,18 @@
     box-shadow: 0 0 10px rgba(181, 167, 10, 0.4);;
 }
 
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        filter: blur(10px);
+    }
+    0% {
+        opacity: 1;
+        filter: brightness(3) blur(5px);
+    }
+}
+
 
 /* Responsive */
 @media screen and (max-width: 767px) {
@@ -82,4 +187,20 @@
         text-align: center;
     }
 }
+
+@media screen and (min-width: 700px) {
+    .hero-inferior-image {
+        max-width: 600px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .navbar-brand{
+        display: none;
+    }  
+    .navbar-nav .nav-link {
+        text-align: center;
+    }
+}
+
 
