@@ -28,6 +28,13 @@
 } 
 
 /* Estilos generales */
+.texto-negro {
+    color: black;
+}
+
+.texto-blanco {
+    color: white;
+}
 
 section {
     display: flex;
@@ -45,6 +52,11 @@ h1 {
     font-size: 2rem;
     padding: 15px 0;
     font-family: 'Rubik Moonrocks', sans-serif;
+}
+
+.section-description {
+    font-size: 1.2rem;
+    color: #584e4e;
 }
 
 .section-text {
@@ -101,7 +113,19 @@ h1 {
 }
 
 .columna {
-    margin: 10px 0;
+    margin-top: 4px;
+    padding: 20px;
+    border: solid 1px #0a0a23;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 0.3s ease-in;
+}
+
+.columna:hover {
+    color: white;
+    background-color: #0a0a23;
 }
 
 .experiencia i {
@@ -126,6 +150,11 @@ h1 {
 
 .badges {
     margin: 15px;
+}
+
+/*Project*/
+.project-recent {
+    padding: 40px;
 }
 
 
